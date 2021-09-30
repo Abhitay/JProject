@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@Wallpaper23.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="150.0" layoutY="100.0" prefHeight="400.0" prefWidth="600.0" style="-fx-border-radius: 40; -fx-border-color: #000000; -fx-background-color: #ffffff; -fx-opacity: 0.8; -fx-border-width: 10; -fx-background-radius: 50;">
+         <children>
+            <Label layoutX="213.0" layoutY="35.0" text="SIGN UP">
+               <font>
+                  <Font name="Segoe UI Semibold" size="45.0" />
+               </font></Label>
+            <TextField fx:id="SignupEmailID" layoutX="150.0" layoutY="101.0" prefHeight="40.0" prefWidth="300.0" promptText="Email ID" style="-fx-border-radius: 40; -fx-background-radius: 40; -fx-border-color: #000000; -fx-background-color: #ffffff;" text="Email ID" />
+            <PasswordField fx:id="Signuppassword" layoutX="150.0" layoutY="151.0" prefHeight="40.0" prefWidth="300.0" promptText="Password" style="-fx-background-radius: 40; -fx-border-radius: 40; -fx-border-color: #000000; -fx-background-color: #ffffff;" />
+            <TextField fx:id="Signupname" layoutX="150.0" layoutY="248.0" prefHeight="40.0" prefWidth="300.0" promptText="Name" style="-fx-border-radius: 40; -fx-background-radius: 40; -fx-border-color: #000000; -fx-background-color: #ffffff;" />
+            <TextField fx:id="Signupnumber" layoutX="150.0" layoutY="294.0" prefHeight="40.0" prefWidth="300.0" promptText="Number" style="-fx-border-radius: 40; -fx-background-radius: 40; -fx-border-color: #000000; -fx-background-color: #ffffff;" />
+            <Button fx:id="Confirmsignupbutton" layoutX="460.0" layoutY="342.0" mnemonicParsing="false" onAction="#goeshomeSignup" prefHeight="30.0" prefWidth="100.0" style="-fx-background-radius: 40; -fx-border-radius: 40; -fx-border-color: #000000; -fx-background-color: #ffffff;" text="Sign Up" />
+            <Button fx:id="Backbutton" layoutX="32.0" layoutY="35.0" mnemonicParsing="false" onAction="#Goeslogin" style="-fx-border-radius: 40; -fx-background-radius: 40; -fx-border-color: #000000; -fx-background-color: #ffffff;" text="&lt;Back" />
+            <PasswordField fx:id="Signupconfirmpassword" layoutX="150.0" layoutY="200.0" prefHeight="40.0" prefWidth="300.0" promptText="Confirm Password" style="-fx-background-radius: 40; -fx-border-radius: 40; -fx-border-color: #000000; -fx-background-color: #ffffff;" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="601.0" prefWidth="531.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+   <children>
+      <AnchorPane layoutX="320.0" prefHeight="600.0" prefWidth="903.0" style="-fx-background-color: #56A9CA; -fx-border-radius: 50; -fx-border-width: 10;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="371.0" layoutY="1.0" prefHeight="600.0" prefWidth="531.0" style="-fx-border-width: 8;">
+               <children>
+                  <Button fx:id="deativate" layoutX="166.0" layoutY="505.0" mnemonicParsing="false" onAction="#deactivatedata" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 40;" text="Deactivate Account" textFill="#fd0000">
+                     <font>
+                        <Font name="Fira Code Retina" size="12.0" />
+                     </font></Button>
+                  <Label layoutX="48.0" layoutY="110.0" text="Name: ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Homename" layoutX="236.0" layoutY="110.0" prefHeight="17.0" prefWidth="76.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="48.0" layoutY="133.0" text="Email ID: ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="25.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="Homeemail" layoutX="236.0" layoutY="159.0" prefHeight="17.0" prefWidth="76.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="48.0" layoutY="180.0" text="Contact Number:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="25.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="Homenumber" layoutX="236.0" layoutY="206.0" prefHeight="17.0" prefWidth="76.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="48.0" layoutY="232.0" text="Membership Status:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="25.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="Homemember" layoutX="236.0" layoutY="258.0" prefHeight="17.0" prefWidth="76.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+         </children></AnchorPane>
+      <VBox layoutX="-47.0" prefHeight="600.0" prefWidth="418.0" style="-fx-background-color: #3C3D3D; -fx-background-radius: 50; -fx-border-color: #ffffff; -fx-border-width: 8; -fx-border-radius: 40;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-47.0" AnchorPane.rightAnchor="529.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #999999; -fx-background-radius: 40; -fx-border-radius: 40; -fx-border-color: #999999;" text="Profile" textAlignment="CENTER" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="120.0" top="75.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Fira Code Retina" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="homesearch" alignment="CENTER" layoutX="138.0" layoutY="68.0" mnemonicParsing="false" onAction="#gosearch" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 40; -fx-border-radius: 40; -fx-border-color: #ffffff;" text="Search" textAlignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="120.0" top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Fira Code Retina" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="homecategories" alignment="CENTER" layoutX="138.0" layoutY="133.0" mnemonicParsing="false" onAction="#gocategory" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 40; -fx-border-radius: 40; -fx-border-color: #ffffff;" text="Categories" textAlignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="120.0" top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Fira Code Retina" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="homecart" alignment="CENTER" layoutX="138.0" layoutY="198.0" mnemonicParsing="false" onAction="#gocart" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 40; -fx-border-radius: 40; -fx-border-color: #ffffff;" text="Cart" textAlignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="120.0" top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Fira Code Retina" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="homemembership" alignment="CENTER" layoutX="138.0" layoutY="263.0" mnemonicParsing="false" onAction="#gomember" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 40; -fx-border-radius: 40; -fx-border-color: #ffffff;" text="Membership" textAlignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="120.0" top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Fira Code Retina" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="homefeedback" alignment="CENTER" layoutX="138.0" layoutY="328.0" mnemonicParsing="false" onAction="#gofeedback" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 40; -fx-border-radius: 40; -fx-border-color: #ffffff;" text="Feedback" textAlignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="120.0" top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Fira Code Retina" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="homehistory" alignment="CENTER" layoutX="138.0" layoutY="392.0" mnemonicParsing="false" onAction="#gohistory" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 40; -fx-border-radius: 40; -fx-border-color: #ffffff;" text="Search History" textAlignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="120.0" top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Fira Code Retina" size="17.0" />
+               </font>
+            </Button>
+         </children></VBox>
+   </children>
+</AnchorPane>
